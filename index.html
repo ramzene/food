@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FOOD</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <h1>Votre santé, Notre priorité.</h1>
+    <div class="menu-img">
+     <img src="images/menu.png" id="menu">
+    </div>
+    <div class="show">
+        <nav class="left-nav">
+            <a href="">HOME</a>
+            <a href="">OUR VIDEO</a>
+            <a href="">OUR PHOTOS</a>
+            <a href="">CONTACT US</a>
+            <a href="">HELP</a>
+
+        </nav>
+    </div>
+    <script>
+        var show = document.querySelector(".show");
+        var menu = document.getElementById("menu");
+        menu.onclick =function(){
+            if(show.style.display == "none"){
+                show.style.display ="block";
+                menu.src="images/cancel.png";
+            }else{
+                show.style.display ="none";
+                menu.src="images/menu.png";
+            }
+        }
+    </script>
+</body>
+</html>
